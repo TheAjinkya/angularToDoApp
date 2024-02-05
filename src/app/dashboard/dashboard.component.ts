@@ -36,7 +36,7 @@ export class DashboardComponent {
   addTask(taskName: any) {
     this.taskList.push({ taskName: taskName, completed: false });
     this.counter = this.counter + 1;
-    this.task = `Task ${this.counter}`;
+    // this.task = `Task ${this.counter}`;
     this.saveToLocalhost(this.taskList);
     console.log('localStorage', localStorage);
   }
