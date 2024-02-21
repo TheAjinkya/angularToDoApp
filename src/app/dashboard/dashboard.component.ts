@@ -60,18 +60,6 @@ export class DashboardComponent {
       this.completedTaskList.push({ ...taskName, completed: true });
     }
 
-    // const makeUncompleteTask = this.completedTaskList.find(
-    //   (elm) => elm.taskName === taskName.taskName && elm.completed === true
-    // );
-    // console.log('makeUncompleteTask', makeUncompleteTask);
-
-    // if (makeUncompleteTask) {
-    //   this.completedTaskList = this.completedTaskList.map((el) => {
-    //     return { ...el, completed: false };
-    //   });
-    // }
-    console.log('completedTaskList', this.completedTaskList);
-
     this.taskList = this.taskList.map((elm) => {
       const updatedTask = this.completedTaskList.find(
         (compElm) => compElm.taskName === elm.taskName

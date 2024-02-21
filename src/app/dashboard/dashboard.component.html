@@ -10,7 +10,7 @@
                                     (keyup.enter)="addTask(taskValue.value)" />
                                 <label class="form-label">New task...</label>
                             </div>
-                            <button type="submit" (click)="addTask(taskValue.value)" class="btn btn-info ms-2">Add</button>
+                            <button type="submit" (click)="addTask(taskValue.value); taskValue.value=''" class="btn btn-info ms-2">Add</button>
                            
                         </form>
 
